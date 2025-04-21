@@ -64,43 +64,37 @@
       padding: 4px 10px;
       border-radius: 4px;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    label {
+    .workshop-module h3 {
+      font-size: 1.8rem;
       font-weight: 600;
-      font-size: 1rem;
+      margin-top: 20px;
+      color: #000;
     }
-    input, select {
-      padding: 14px;
-      border: 1px solid #bbb;
-      border-radius: 10px;
-      font-size: 1rem;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      font-size: 1rem;
-      color: #888;
-    }
-    .profile-photo {
-      width: 100%;
-      max-width: 700px;
-      border-radius: 20px;
-      margin-bottom: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .contact-info {
-      margin-top: 50px;
-      font-size: 1.2rem;
+    ul, ol {
+      padding-left: 20px;
     }
     ul li, ol li {
       margin-bottom: 18px;
       font-size: 1.25rem;
+    }
+    .promo {
+      font-size: 1.7rem;
+      font-weight: 700;
+      text-align: center;
+      background: #e8ded0;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 60px 0;
+    }
+    iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 1245px;
+      border: 0;
+    }
+    .contact-info {
+      margin-top: 50px;
+      font-size: 1.2rem;
     }
     .emphasis {
       font-size: 1.6rem;
@@ -115,14 +109,11 @@
     a:hover {
       text-decoration: underline;
     }
-    .promo {
-      font-size: 1.7rem;
-      font-weight: 700;
+    footer {
       text-align: center;
-      background: #e8ded0;
-      padding: 30px;
-      border-radius: 12px;
-      margin: 60px 0;
+      padding: 40px;
+      font-size: 1rem;
+      color: #888;
     }
   </style>
 </head>
@@ -147,23 +138,33 @@
   </section>
 
   <section>
-    <h2>What You'll Learn in Just Half a Day</h2>
-    <ol>
-      <li>Understand the basics of AI assistants</li>
-      <li>Build your personal or business landing page</li>
-      <li>Use automation tools to boost productivity</li>
-      <li>Go live with your own domain — same day</li>
-    </ol>
-  </section>
-
-  <section>
-    <h2>Is This Workshop for You?</h2>
-    <ul>
-      <li><strong>Small Business Owners:</strong> No tech skills? We've got you.</li>
-      <li><strong>Tech Explorers:</strong> Curious about AI? This is your moment.</li>
-      <li><strong>Beginners:</strong> You’ll get hands-on support, step by step.</li>
-    </ul>
-    <p class="emphasis">Don't wait for 'someday'. Let’s launch it — together!</p>
+    <h2>Workshop Formats</h2>
+    <div class="workshop-module">
+      <h3>1. From Prompt to Telegram Bot: Building Your AI Assistant</h3>
+      <ul>
+        <li>Understanding the fundamentals of AI assistants</li>
+        <li>Hands-on prompt engineering to craft effective prompts</li>
+        <li>Building and testing your assistant in n8n</li>
+        <li>Integrating your assistant with a Telegram bot for real-time messaging</li>
+      </ul>
+    </div>
+    <div class="workshop-module">
+      <h3>2. GitHub-Powered Landing Page Workshop</h3>
+      <ul>
+        <li>Designing and coding a personal or corporate landing page from scratch</li>
+        <li>Version control and deployment via GitHub Pages</li>
+        <li>Best practices for layout, styling, and responsive design</li>
+      </ul>
+    </div>
+    <div class="workshop-module">
+      <h3>3. AI-Driven Website with Custom Domain</h3>
+      <ul>
+        <li>Generating content and prototype designs using AI tools</li>
+        <li>Building a one-page or multi-page site following a template</li>
+        <li>Connecting your own domain and configuring DNS settings</li>
+        <li>Publishing and verifying your live site in the browser</li>
+      </ul>
+    </div>
   </section>
 
   <section class="promo">
@@ -172,15 +173,14 @@
 
   <section id="waitlist">
     <h2>Join the Waitlist</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn4oB4K0nfSOmW6jvQ3Avxx6dqsG6zC8sZfucodmCgEOxVGQ/viewform?embedded=true" width="640" height="1245" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfn4oB4K0nfSOmW6jvQ3Avxx6dqsG6zC8sZfucodmCgEOxVGQ/viewform?embedded=true">Loading…</iframe>
   </section>
 
   <section>
     <h2>Still Not Sure?</h2>
     <p><em>“I’m not a tech person — can I really do this?”</em> → Yes! You absolutely can. And we’ll support you every step of the way.</p>
     <a href="#waitlist"><button class="cta-button">Yes, I’m In!</button></a>
-    <p><small><strong>Spots are limited.</strong> Don’t miss your chance to build something amazing!</small></p>
-
+    <p class="emphasis"><strong>Spots are limited.</strong> Don’t miss your chance to build something amazing!</p>
     <div class="contact-info">
       <p><strong>Contact Us:</strong></p>
       <p>Email: <a href="mailto:4759377@gmail.com">4759377@gmail.com</a></p>
@@ -193,5 +193,4 @@
     <p>This page was created using AI technologies.</p>
   </footer>
 </body>
-  
 </html>
